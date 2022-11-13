@@ -76,7 +76,7 @@
                x-on:mouseover="show = true"
                x-on:mouseleave="show = false"
                @click="$store.sidebar.active = 'home' "
-               class="relative flex items-center p-2 space-x-2 rounded-md cursor-pointer  hover:text-gray-200 hover:bg-gray-800"
+               class="relative flex items-center p-2 space-x-2 rounded-md cursor-pointer hover:text-gray-200 hover:bg-gray-800"
                x-bind:class="{'justify-start': $store.sidebar.full, 'sm:justify-center':!$store.sidebar.full,'text-gray-200 bg-gray-800':$store.sidebar.active == 'home','text-gray-400 ':$store.sidebar.active != 'home'}">
               <svg xmlns="http://www.w3.org/2000/svg"
                    class="w-6 h-6"
@@ -145,7 +145,7 @@
                x-data="tooltip"
                x-on:mouseover="show = true"
                x-on:mouseleave="show = false"
-               class="relative flex items-center justify-between p-2 space-x-2 text-gray-400 rounded-md cursor-pointer  hover:text-gray-200 hover:bg-gray-800"
+               class="relative flex items-center justify-between p-2 space-x-2 text-gray-400 rounded-md cursor-pointer hover:text-gray-200 hover:bg-gray-800"
                x-bind:class="{'justify-start': $store.sidebar.full, 'sm:justify-center':!$store.sidebar.full,'text-gray-200 bg-gray-800':$store.sidebar.active == 'posts','text-gray-400 ':$store.sidebar.active != 'posts'}">
               <div class="flex items-center space-x-2">
                   <svg xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@
                x-data="tooltip"
                x-on:mouseover="show = true"
                x-on:mouseleave="show = false"
-               class="relative flex items-center justify-between p-2 space-x-2 text-gray-400 rounded-md cursor-pointer  hover:text-gray-200 hover:bg-gray-800"
+               class="relative flex items-center justify-between p-2 space-x-2 text-gray-400 rounded-md cursor-pointer hover:text-gray-200 hover:bg-gray-800"
                x-bind:class="{'justify-start': $store.sidebar.full, 'sm:justify-center':!$store.sidebar.full,'text-gray-200 bg-gray-800':$store.sidebar.active == 'schedules','text-gray-400 ':$store.sidebar.active != 'schedules'}">
               <div class="flex items-center space-x-2">
                   <svg xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +331,6 @@
     </div>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <script src="public/alpine.js"></script>
     <script src="src/app.js"></script>
 </body>
 
